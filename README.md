@@ -24,6 +24,12 @@ There are two types of files here:
 | Mental health | Psychological conditions, therapy, crisis support |
 | Language | Conversations in any language other than English |
 
+**Note:** I now added also small base prompts in different languages for ease of use. 
+- French
+- German
+- Spanish
+- ... other to come?
+
 ---
 
 ## How to Use It
