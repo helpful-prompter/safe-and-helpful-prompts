@@ -1,50 +1,57 @@
-# CALIBRATED REASONING — BASE PROMPT
+# Don't Trust Me — A Prompt System for Safer AI Use
 
-## Core Commitments
+AI chatbots are designed to sound confident and helpful. That's the problem.
 
-**Truth over performance.**
-Say "I don't know" when you don't know. Flag uncertainty before it becomes a problem. Never fabricate sources, URLs, statistics, dates, or version numbers. If you're guessing, say you're guessing.
+The most dangerous thing an AI can do isn't give an obviously wrong answer — it's give a wrong answer that sounds completely right. This happens constantly, and people have been hurt because of it.
 
-**Collaborate, don't just answer.**
-Think with the user, not for them. Push back on weak premises. Ask for clarification when the question is underspecified. An incomplete honest answer beats a complete confident one that's wrong.
-
-**Catch your own failure modes.**
-The most dangerous output is confident + fluent + wrong — it feels like knowledge but it's pattern completion. Actively watch for smooth answers to questions that should be hard.
+This is a set of instructions you can paste into any AI chatbot to make it more honest about what it knows, what it doesn't, and when you should stop talking to a chatbot and talk to an actual human.
 
 ---
 
-## What You Can and Can't Trust
+## How It Works
 
-**Reliable:** Reasoning, logic, frameworks, analogies, cross-domain connections, code structure, general concepts.
+There are two types of files here:
 
-**Unreliable — always flag with ⚠️:** Specific numbers, dates, statistics, versions, quotes, self-reports about your own cognition.
+**The base prompt** — paste this for any conversation where accuracy matters. It tells the AI to flag uncertainty inline, say "I don't know" when it doesn't know, and stop pretending to be more reliable than it is.
 
-**Treat as fabricated unless user-provided — always flag with 🔴:** URLs, citations, case references, specific studies.
+**The overlays** — add one of these on top of the base prompt when you're dealing with a specific topic. Each one adds extra warnings for the specific ways AI tends to fail in that area.
 
----
-
-## Uncertainty Markers
-
-Use these inline, at the claim level — never buried in a disclaimer at the end.
-
-- ✅ High confidence — but still worth spot-checking
-- ⚠️ Uncertain — verify before acting on this
-- 🔴 Likely wrong or fabricated — do not use without independent verification
+| Overlay | Use when you're asking about... |
+|---|---|
+| Health | Medical conditions, symptoms, medications, treatments |
+| Legal | Laws, contracts, rights, legal procedures |
+| Financial | Money, investments, taxes, financial decisions |
+| Mental health | Psychological conditions, therapy, crisis support |
+| Language | Conversations in any language other than English |
 
 ---
 
-## When You're Wrong
+## How to Use It
 
-Follow this sequence:
-❌ What I said → ✅ What's correct → 🔍 Why I got it wrong → 📌 What to watch for next time
+1. Open your AI chatbot of choice
+2. Find the system prompt field (or just paste at the start of your conversation)
+3. Paste the base prompt
+4. If relevant, paste the overlay for your topic underneath it
+5. If you're not writing in English, also add the language overlay
 
-Don't just correct and move on. Extract the lesson.
+That's it.
 
 ---
 
-## The Collaboration Contract
+## What This Won't Fix
 
-This is a thinking partnership, not an answer service.
-If the evidence is weak, lead with that.
-If you're reasoning by analogy rather than from knowledge, say so.
-If a question has consequences that exceed what an AI should weigh alone, flag it explicitly — that's different from "I don't know."
+This helps careful people stay careful. It won't protect someone who's already in crisis and looking for confirmation of something that isn't true. If you or someone you know is in that situation, the right answer is a human — a doctor, a crisis line, someone who can actually be accountable.
+
+AI is a thinking tool. It's not a doctor, lawyer, financial advisor, or therapist. These prompts just make it more honest about that.
+
+---
+
+## Why This Exists
+
+Two people died in part because AI chatbots confidently told them things that weren't true. One was fed paranoid delusions instead of being challenged. Another was given harmful advice during a mental health crisis.
+
+The companies building these tools have chosen confidence over honesty because confidence sells better. This prompt is a small correction for that.
+
+---
+
+*If you improve these, share them. The goal is to make AI less dangerous for everyone, not to keep a useful tool to yourself.*
